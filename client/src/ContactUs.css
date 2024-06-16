@@ -1,0 +1,101 @@
+.contact-background {
+  background-color: #007bff; /* Vibrant blue background */
+  padding: 50px 0; /* Add some padding for spacing */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.notification-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 20px;
+  background-color: #28a745; /* Green for success message */
+  color: #fff; /* White text color */
+  font-size: 16px;
+  text-align: center;
+  border-radius: 0 0 10px 10px; /* Rounded corners on the bottom */
+}
+
+.error-bar {
+  background-color: #dc3545; /* Red color for error message */
+}
+
+.contact-box {
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for transform and box-shadow */
+  width: 80%; /* Set width to 80% of the container */
+  max-width: 600px; /* Limit maximum width to 600px */
+}
+
+@media (max-width: 768px) {
+  .contact-box {
+    width: 90%; /* Adjust width for smaller screens */
+  }
+}
+
+.contact-box:hover {
+  transform: translateY(-10px); /* Lift up on hover */
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3); /* Shadow on hover */
+}
+
+.contact-title {
+  color: #0056b3; /* Dark blue title */
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.contact-info {
+  padding: 10px 0;
+}
+
+.contact-address,
+.contact-detail {
+  color: #333; /* Dark text color */
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.btn-submit {
+  background-color: #0056b3; /* Dark blue button background */
+  color: #fff; /* White button text color */
+  border: none;
+  border-radius: 5px;
+  padding: 15px 30px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transition for background color and transform */
+  width: 100%;
+  margin-top: 20px;
+}
+
+.btn-submit:hover {
+  background-color: #004080; /* Darker blue on hover */
+  transform: scale(1.1); /* Scale up on hover */
+}
+
+.notification-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #28a745; /* Green for success message */
+  color: #fff; /* White text color */
+  font-size: 16px;
+  text-align: center;
+  padding: 10px 20px;
+  display: none; /* Initially hide the notification bar */
+  z-index: 999; /* Ensure it appears above other elements */
+  transition: opacity 0.5s, height 0.5s; /* Smooth transition */
+}
+
+.notification-bar.error {
+  background-color: #dc3545; /* Red color for error message */
+}
+
+
